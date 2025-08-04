@@ -164,10 +164,10 @@ async function triggerCheckout() {
   try {
     UILogger.checkout({
       event: 'API_REQUEST_STARTED',
-      endpoint: 'create-novavault-checkout-session'
+      endpoint: 'create-pulsesync-checkout-session'
     });
 
-    const response = await fetch('https://partyhat-authorization-server-541da1fd5051.herokuapp.com/auth/create-vaultsync-checkout-session', {
+    const response = await fetch('https://partyhat-authorization-server-541da1fd5051.herokuapp.com/auth/create-pulsesync-checkout-session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -223,9 +223,9 @@ async function triggerCheckout() {
 	<div class="container">
 		<div class="logo">
 			<div class="logo-icon-wrapper">
-				<img src="/novavault-logo.png" alt="Novavault logo" class="logo-icon" />
+				<img src="/novavault-logo.png" alt="PulseSync logo" class="logo-icon" />
 			</div>
-			<div class="logo-text">Novavault</div>
+			<div class="logo-text">PulseSync</div>
 		</div>
 
 		<h1>Your Digital Life,<br />Beautifully Preserved.</h1>
@@ -275,7 +275,7 @@ async function triggerCheckout() {
 					<span class="loading-spinner"></span>
 					Download Now
 				{:else}
-					Start your Novavault
+					Start your PulseSync
 				{/if}
 			</button>
 		</div>
@@ -327,7 +327,7 @@ async function triggerCheckout() {
 				<span class="loading-spinner loading-spinner-dark"></span>
 				Starting sync
 			{:else}
-				Start your Novavault today
+				Start your PulseSync today
 			{/if}
 		</button>
 
@@ -338,16 +338,16 @@ async function triggerCheckout() {
 	<div class="container footer" style="padding: 0;">
 		<span class="logo">
 			<div class="logo-icon-wrapper-footer">
-				<img src="/novavault-logo.png" alt="Novavault logo" class="logo-icon-footer" />
+				<img src="/novavault-logo.png" alt="PulseSync logo" class="logo-icon-footer" />
 
 			</div>
-			<div class="logo-text-footer">Novavault</div>
+			<div class="logo-text-footer">PulseSync</div>
 		</span>
 
 		<nav class="footer-nav">
 			<span style="color: #555; margin: 0 0.7rem; cursor: default;">Privacy</span>
 			<span style="color: #555; margin: 0 0.7rem; cursor: default;">Terms</span>
-			<a href="mailto:support@novavault.me">Contact</a>
+			<a href="mailto:support@pulsesync.work">Contact</a>
 		</nav>
 	</div>
 </footer>

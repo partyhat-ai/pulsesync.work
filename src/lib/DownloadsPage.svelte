@@ -30,7 +30,7 @@
       size: '42.3 MB',
       requirements: 'macOS 11.0 or later',
       downloadUrl:
-        'https://novavault-downloads.s3.us-east-1.amazonaws.com/Novavault-1.0.2-arm64-mac.zip'
+        'https://pulsesync-downloads.s3.us-east-1.amazonaws.com/Novavault-1.0.2-arm64-mac.zip'
     },
     windows: {
       name: 'Windows',
@@ -38,7 +38,7 @@
       size: '38.7 MB',
       requirements: 'Windows 10 or later',
       downloadUrl:
-        'https://novavault-downloads.s3.us-east-1.amazonaws.com/Novavault.zip'
+        'https://pulsesync-downloads.s3.us-east-1.amazonaws.com/Novavault.zip'
     }
   };
 
@@ -318,9 +318,9 @@
   <div class="container">
     <div class="logo">
       <div class="logo-icon-wrapper">
-        <img src="/novavault-logo.png" alt="Novavault logo" class="logo-icon" />
+        <img src="/novavault-logo.png" alt="PulseSync logo" class="logo-icon" />
       </div>
-      <div class="logo-text">Novavault</div>
+      <div class="logo-text">PulseSync</div>
     </div>
 
     <h1 style="font-weight: 500;">Download for desktop</h1>
@@ -378,7 +378,7 @@
 
     <!-- download card -->
     <div class="download-card">
-      <h2>Novavault for {downloads[selectedPlatform].name}</h2>
+      <h2>PulseSync for {downloads[selectedPlatform].name}</h2>
 
       <div class="download-info">
         <div class="info-item"><span class="info-label">Version:</span><span class="info-value">{downloads[selectedPlatform].version}</span></div>
@@ -427,7 +427,7 @@
             {/if}
           </div>
           <p class="token-instructions"><b>Step 1:</b> 
-			Download Novavault.<br>
+			Download PulseSync.<br>
 			<b>Step 2:</b>
 			 When prompted, paste your token in the app.
 		   </p>
@@ -486,7 +486,7 @@
           {/if}
           {#if licenseError.includes('contact support')}
             <p class="support-link">
-Need help? <a href="mailto:support@novavault.me" class="link">Contact Support</a>
+Need help? <a href="mailto:support@pulsesync.work" class="link">Contact Support</a>
             </p>
           {/if}
         </div>
@@ -516,9 +516,9 @@ Need help? <a href="mailto:support@novavault.me" class="link">Contact Support</a
   <div class="container footer">
     <span class="logo">
       <div class="logo-icon-wrapper-footer">
-        <img src="/novavault-logo.png" alt="Novavault logo" class="logo-icon-footer" />
+        <img src="/novavault-logo.png" alt="PulseSync logo" class="logo-icon-footer" />
       </div>
-      <div class="logo-text-footer">Novavault</div>
+      <div class="logo-text-footer">PulseSync</div>
     </span>
     <nav class="footer-nav">
       <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a>

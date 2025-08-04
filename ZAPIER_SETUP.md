@@ -31,7 +31,7 @@ PUBLIC_ZAPIER_WEBHOOK_URL=https://hooks.zapier.com/hooks/catch/YOUR_WEBHOOK_ID/
 2. Choose your email service (e.g., Gmail, SendGrid)
 3. Map the webhook data to your email template:
    - **To**: Use the `email` field from the webhook
-   - **Subject**: "Welcome to VaultSync - Your License Key"
+   - **Subject**: "Welcome to PulseSync - Your License Key"
    - **Body**: Include the following data:
      - License Token: `{{licenseToken}}`
      - Download URLs: `{{downloadUrls.mac}}` and `{{downloadUrls.windows}}`
@@ -42,23 +42,23 @@ PUBLIC_ZAPIER_WEBHOOK_URL=https://hooks.zapier.com/hooks/catch/YOUR_WEBHOOK_ID/
 ```
 Hi there!
 
-Thank you for purchasing VaultSync! Here's your license information:
+Thank you for purchasing PulseSync! Here's your license information:
 
 License Token: {{licenseToken}}
 
-Download VaultSync:
+Download PulseSync:
 - macOS: {{downloadUrls.mac}}
 - Windows: {{downloadUrls.windows}}
 
 Installation Instructions:
-1. Download VaultSync for your platform
+1. Download PulseSync for your platform
 2. Install the application
 3. When prompted, paste your license token
 
 If you have any questions, please don't hesitate to reach out.
 
 Best regards,
-The VaultSync Team
+The PulseSync Team
 ```
 
 ## Testing

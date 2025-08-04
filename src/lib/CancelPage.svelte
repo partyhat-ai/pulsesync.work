@@ -6,9 +6,9 @@
 	<div class="container">
 		<div class="logo">
 			<div class="logo-icon-wrapper">
-				<img src="/novavault-logo.png" alt="Novavault logo" class="logo-icon" />
+				<img src="/novavault-logo.png" alt="PulseSync logo" class="logo-icon" />
 			</div>
-			<div class="logo-text">Novavault</div>
+			<div class="logo-text">PulseSync</div>
 		</div>
 
 	</div>
@@ -23,7 +23,7 @@
 			</p>
 			<div class="actions">
 				<a href="/" class="btn btn-secondary">
-					Learn more about Novavault
+					Learn more about PulseSync
 				</a>
 			</div>
 		</div>
@@ -39,9 +39,9 @@
 	<div class="container footer">
 		<span class="logo">
 			<div class="logo-icon-wrapper-footer">
-				<img src="/novavault-logo.png" alt="Novavault logo" class="logo-icon-footer" />
+				<img src="/novavault-logo.png" alt="PulseSync logo" class="logo-icon-footer" />
 			</div>
-			<div class="logo-text-footer">Novavault</div>
+			<div class="logo-text-footer">PulseSync</div>
 		</span>
 
 		<nav class="footer-nav">

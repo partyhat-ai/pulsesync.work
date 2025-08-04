@@ -16,8 +16,8 @@ async function testWebhook() {
     timestamp: new Date().toISOString(),
     platform: 'mac',
     downloadUrls: {
-      mac: 'https://partyhat-vaultsync-bucket.s3.us-east-1.amazonaws.com/VaultSync-1.0.2-arm64-mac.zip',
-      windows: 'https://partyhat-vaultsync-bucket.s3.us-east-1.amazonaws.com/VaultSync.zip'
+      mac: 'https://pulsesync-downloads.s3.us-east-1.amazonaws.com/VaultSync-1.0.2-arm64-mac.zip',
+      windows: 'https://pulsesync-downloads.s3.us-east-1.amazonaws.com/VaultSync.zip'
     },
     plan: 'test_plan',
     status: 'active',
