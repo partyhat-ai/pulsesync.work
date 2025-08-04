@@ -319,7 +319,7 @@ async function triggerCheckout() {
 
 <section class="cta-dark">
 	<div class="cta-container">
-		<h2>PUSH YOUR<br />DATA LIMITS</h2>
+		<h2>PUSH YOUR<br />CONTENT LIMITS</h2>
 				<button class="btn btn-secondary_bottom" on:click={triggerCheckout} disabled={isCheckoutLoading}>
 			{#if checkoutSuccess}
 				<svg class="checkmark checkmark-dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -736,7 +736,6 @@ async function triggerCheckout() {
 		text-transform: uppercase;
 		margin-top: -1px;
 		line-height: 1.1;
-		text-shadow: 2px 2px 0px #CCFF00;
 	}
 
 	.feature-migrate p {
@@ -1446,7 +1445,6 @@ async function triggerCheckout() {
   letter-spacing: 0.02em;
   color: #fff;
   text-transform: uppercase;
-  text-shadow: 2px 2px 0px #CCFF00;
 }
 
 
