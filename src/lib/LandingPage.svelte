@@ -297,7 +297,7 @@ async function triggerCheckout() {
 		<div class="feature feature-transfers">
 			<div class="feature-content">
 				<h2>SYNCHRONIZED EVERYWHERE</h2>
-				<p>Cross-platform performance optimization.<br> iPhone to MacBook to iPad—every device running at peak sync velocity.</p>
+				<p>Cross-platform performance optimization.<br> OnlyFans to Desktop to platforms like Slushy.</p>
 			</div>
 			<div class="feature-image-container" style="border-radius: 24px;">
 				<img src="/pixel-perfect_transfers.png" alt="Pixel-perfect transfers" class="feature-image" />
@@ -341,7 +341,6 @@ async function triggerCheckout() {
 	<div class="container footer" style="padding: 0;">
 		<span class="logo">
 			<div class="logo-icon-wrapper-footer">
-				<img src="/vaultsync-token-logo.png" alt="PulseSync logo" class="logo-icon-footer" />
 
 			</div>
 			<div class="logo-text-footer">PulseSync</div>
@@ -427,6 +426,10 @@ async function triggerCheckout() {
 	@keyframes kinetic-lines {
 		0% { transform: translateX(-100px); }
 		100% { transform: translateX(100px); }
+	}
+
+	.logo-text-footer{
+		color: black;
 	}
 
 	.logo {
