@@ -223,15 +223,18 @@ async function triggerCheckout() {
 	<div class="container">
 		<div class="logo">
 			<div class="logo-icon-wrapper">
-				<img src="/novavault-logo.png" alt="PulseSync logo" class="logo-icon" />
+				<img src="/vaultsync-token-logo.png" alt="PulseSync logo" class="logo-icon" />
 			</div>
 			<div class="logo-text">PulseSync</div>
 		</div>
 
-		<h1>Your Digital Life,<br />Beautifully Preserved.</h1>
-		<p class="subtag">The personal vault that understands you.<span class="mobile-break"></span> Store, sync, and access your memories with the intimacy they deserve.</p>
+		<h1>SYNC YOUR<br />DIGITAL PULSE</h1>
+		<p class="subtag">PERFORMANCE-GRADE DATA SYNC<span class="mobile-break"></span> ENGINEERED FOR PEAK EFFICIENCY</p>
 		
-		<!-- Rotating Vault Sphere -->
+		<!-- Performance Pulse Visualization -->
+		<div class="pulse-container">
+			<div class="pulse-line"></div>
+		</div>
 		<div class="vault-sphere-container">
 			<div class="vault-sphere">
 				<div class="sphere-inner"></div>
@@ -251,7 +254,7 @@ async function triggerCheckout() {
 				<span class="loading-spinner"></span>
 				Getting Started
 			{:else}
-				Get Started Free
+				BREAK YOUR LIMITS
 			{/if}
 		</button>
 	</div>
@@ -263,8 +266,8 @@ async function triggerCheckout() {
 	<div class="features-container">
 		<!-- Migrate your content section - moved to top of features -->
 		<div class="feature-migrate">
-			<h2>Made for You</h2>
-			<p style="margin-bottom: 1.5rem;">Your photos, videos, and memories deserve a home as unique as you are. Simple, beautiful, yours.</p>
+			<h2>ENGINEERED TO PERFORM</h2>
+			<p style="margin-bottom: 1.5rem;">Next-generation sync technology. Built for athletes, creators, and anyone who demands excellence from their data.</p>
 			<button on:click={triggerCheckout} class="btn btn-download" disabled={isCheckoutLoading}>
 				{#if checkoutSuccess}
 					<svg class="checkmark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -275,7 +278,7 @@ async function triggerCheckout() {
 					<span class="loading-spinner"></span>
 					Download Now
 				{:else}
-					Start your PulseSync
+					START SYNCING
 				{/if}
 			</button>
 		</div>
@@ -285,16 +288,16 @@ async function triggerCheckout() {
 				<img src="/build-in_compliance.png" style="border-radius: 16px;" alt="Earn more from every video" class="feature-image" />
 			</div>
 			<div class="feature-content">
-				<h2>Simply Secure</h2>
-				<p>Your personal moments, protected by design.<br> Beautiful encryption that works behind the scenes, so you don't have to think about it.</p>
+				<h2>FORTRESS-GRADE SECURITY</h2>
+				<p>Military-level encryption meets seamless performance.<br> Your data moves fast, stays secure, performs flawlessly.</p>
 			</div>
 		</div>
 
 		<!-- Pixel-perfect transfers -->
 		<div class="feature feature-transfers">
 			<div class="feature-content">
-				<h2>Everywhere You Are</h2>
-				<p>Your memories follow you, effortlessly.<br> From your iPhone to your laptop to that old iPad—everything stays in perfect sync.</p>
+				<h2>SYNCHRONIZED EVERYWHERE</h2>
+				<p>Cross-platform performance optimization.<br> iPhone to MacBook to iPad—every device running at peak sync velocity.</p>
 			</div>
 			<div class="feature-image-container" style="border-radius: 24px;">
 				<img src="/pixel-perfect_transfers.png" alt="Pixel-perfect transfers" class="feature-image" />
@@ -316,7 +319,7 @@ async function triggerCheckout() {
 
 <section class="cta-dark">
 	<div class="cta-container">
-		<h2>Your life.<br />Your way.</h2>
+		<h2>PUSH YOUR<br />DATA LIMITS</h2>
 				<button class="btn btn-secondary_bottom" on:click={triggerCheckout} disabled={isCheckoutLoading}>
 			{#if checkoutSuccess}
 				<svg class="checkmark checkmark-dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -327,7 +330,7 @@ async function triggerCheckout() {
 				<span class="loading-spinner loading-spinner-dark"></span>
 				Starting sync
 			{:else}
-				Start your PulseSync today
+				BREAK THROUGH NOW
 			{/if}
 		</button>
 
@@ -338,7 +341,7 @@ async function triggerCheckout() {
 	<div class="container footer" style="padding: 0;">
 		<span class="logo">
 			<div class="logo-icon-wrapper-footer">
-				<img src="/novavault-logo.png" alt="PulseSync logo" class="logo-icon-footer" />
+				<img src="/vaultsync-token-logo.png" alt="PulseSync logo" class="logo-icon-footer" />
 
 			</div>
 			<div class="logo-text-footer">PulseSync</div>
@@ -353,17 +356,17 @@ async function triggerCheckout() {
 </footer>
 
 <style>
-    	/* Import SF Pro for early 2000s Apple aesthetic */
-	@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+    	/* Nike Breaking2 Typography - Bold Condensed Sans */
+	@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
-	/* Global reset & typography - Early 2000s Apple style */
+	/* Global reset & typography - Nike Breaking2 style */
 	:global(html, body) {
 		margin: 0;
 		padding: 0;
-		font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
-		line-height: 1.6;
-		color: #333;
-		background: #f5f5f7;
+		font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+		line-height: 1.4;
+		color: #000;
+		background: #fff;
           overflow-x: hidden;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -375,6 +378,8 @@ async function triggerCheckout() {
 		margin: 0 auto;
 		padding: 5rem 4rem;
 		text-align: center;
+		position: relative;
+		z-index: 10;
 	}
 
 	/* CTA Dark Container - separate from main container */
@@ -389,21 +394,52 @@ async function triggerCheckout() {
 	.hero {
 		padding: 3rem 0 4.5rem;
 		position: relative;
-		background: linear-gradient(180deg, 
-			#ffffff 0%, 
-			#f5f5f7 100%);
+		background: linear-gradient(135deg, 
+			#000000 0%, 
+			#1a1a1a 50%,
+			#000000 100%);
+		color: #fff;
+		overflow: hidden;
+	}
+
+	/* Kinetic diagonal lines */
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -50%;
+		width: 200%;
+		height: 100%;
+		background: repeating-linear-gradient(
+			45deg,
+			transparent 0px,
+			transparent 40px,
+			rgba(204, 255, 0, 0.1) 42px,
+			rgba(204, 255, 0, 0.1) 44px,
+			transparent 46px,
+			transparent 80px
+		);
+		animation: kinetic-lines 20s linear infinite;
+		pointer-events: none;
+		z-index: 1;
+	}
+
+	@keyframes kinetic-lines {
+		0% { transform: translateX(-100px); }
+		100% { transform: translateX(100px); }
 	}
 
 	.logo {
 		display: inline-flex;
 		align-items: center;
 		gap: 0.5rem;
-		font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
-		font-weight: 400;
-		font-size: 1.25rem;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 600;
+		font-size: 1.4rem;
 		margin-bottom: 0.68rem;
-		color: #333;
-		letter-spacing: -0.01em;
+		color: #fff;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
 	}
 
 	.logo-icon-wrapper,
@@ -428,10 +464,9 @@ async function triggerCheckout() {
 		bottom: -2px;
 		left: 0;
 		width: 0;
-		height: 1px;
-		background: linear-gradient(90deg, 
-			#66CCFF 0%, 
-			#3399FF 100%);
+		height: 2px;
+		background: #CCFF00;
+		box-shadow: 0 0 8px rgba(204, 255, 0, 0.6);
 		transition: width 0.3s ease;
 	}
 
@@ -445,33 +480,34 @@ async function triggerCheckout() {
 	}
 
 	.hero h1 {
-		font-size: 3rem;
-		line-height: 1.1;
+		font-family: 'Oswald', sans-serif;
+		font-size: 4rem;
+		line-height: 0.9;
 		margin: 1rem 0;
-		font-weight: 400;
-		letter-spacing: -0.03em;
-		background: linear-gradient(135deg, #333 0%, #555 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		color: #CCFF00;
+		text-transform: uppercase;
 	}
 
 	@media screen and (max-width: 540px) {
 		.hero h1 {
-			font-size: 1.8rem;
-			font-weight: 500;
+			font-size: 2.5rem;
+			font-weight: 700;
+			line-height: 0.85;
             
 		}
 	}
 
-    .h3 { font-weight: 500;}
 	.subtag {
-		color: #666;
+		color: #ccc;
 		font-size: 1.3rem;
 		margin-bottom: 2rem;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 1.65rem;
-		letter-spacing: -0.01em;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		font-family: 'Work Sans', sans-serif;
 	}
 
 	/* Mobile-only line break */
@@ -485,48 +521,87 @@ async function triggerCheckout() {
 		}
 	}
 
-    .subtagHighlight {
-		color: #828282;
-		font-size: 1rem;
-		margin-bottom: 2rem;
-		font-weight: 300;
-		line-height: 1.55rem;
-	}
 
     	@media screen and (max-width: 540px) {
 		.hero .subtag {
 			font-size: 1.1rem;
             margin-top: 28px;
-            line-height: 1.65rem ;
+            line-height: 1.65rem;
+            color: #bbb;
 
 		}
 	}
 
-	/* Floating Icon Layer */
-.icon-layer {
-  position: fixed;
-  top: 220px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 720px;   /* fixed */
-  height: 800px;
-  z-index: 5;
-  pointer-events: none;
-}
-	.floaty-icon {
-		position: absolute;
-		width: 50px;
-		height: 50px;
-		pointer-events: none;
-	}
 
 	/* Translucent iMac G3-inspired Sphere */
+	/* Heartbeat Pulse Visualization */
 	.vault-sphere-container {
 		position: relative;
 		width: 200px;
 		height: 200px;
 		margin: 3rem auto 2rem;
 		perspective: 800px;
+		z-index: 10;
+	}
+
+	.pulse-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 300px;
+		height: 100px;
+		z-index: 5;
+	}
+
+	.pulse-line {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: #CCFF00;
+		box-shadow: 0 0 10px #CCFF00;
+		animation: pulse-heartbeat 2s ease-in-out infinite;
+	}
+
+	.pulse-line::before {
+		content: '';
+		position: absolute;
+		left: 20%;
+		top: -15px;
+		width: 3px;
+		height: 30px;
+		background: #CCFF00;
+		box-shadow: 0 0 8px #CCFF00;
+		animation: pulse-spike-1 2s ease-in-out infinite;
+	}
+
+	.pulse-line::after {
+		content: '';
+		position: absolute;
+		left: 60%;
+		top: -25px;
+		width: 3px;
+		height: 50px;
+		background: #CCFF00;
+		box-shadow: 0 0 8px #CCFF00;
+		animation: pulse-spike-2 2s ease-in-out infinite 0.3s;
+	}
+
+	@keyframes pulse-heartbeat {
+		0%, 100% { opacity: 0.6; }
+		50% { opacity: 1; }
+	}
+
+	@keyframes pulse-spike-1 {
+		0%, 90%, 100% { transform: scaleY(0.1); opacity: 0.6; }
+		10% { transform: scaleY(1); opacity: 1; }
+	}
+
+	@keyframes pulse-spike-2 {
+		0%, 90%, 100% { transform: scaleY(0.1); opacity: 0.6; }
+		10% { transform: scaleY(1); opacity: 1; }
 	}
 
 	.vault-sphere {
@@ -545,17 +620,17 @@ async function triggerCheckout() {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		background: radial-gradient(circle at 30% 30%, 
-			rgba(255, 255, 255, 0.8) 0%, 
-			rgba(102, 204, 255, 0.3) 40%, 
-			rgba(51, 153, 255, 0.2) 100%);
+			rgba(204, 255, 0, 0.9) 0%, 
+			rgba(204, 255, 0, 0.4) 40%, 
+			rgba(0, 0, 0, 0.8) 100%);
 		border-radius: 50%;
 		box-shadow: 
-			0 0 40px rgba(102, 204, 255, 0.5),
-			inset -20px -20px 40px rgba(255, 255, 255, 0.4),
-			inset 20px 20px 40px rgba(102, 204, 255, 0.3);
-		backdrop-filter: blur(20px);
-		border: 2px solid rgba(255, 255, 255, 0.5);
-		animation: gentlePulse 4s ease-in-out infinite;
+			0 0 40px rgba(204, 255, 0, 0.8),
+			0 0 80px rgba(204, 255, 0, 0.4),
+			inset -20px -20px 40px rgba(0, 0, 0, 0.6),
+			inset 20px 20px 40px rgba(204, 255, 0, 0.3);
+		border: 2px solid #CCFF00;
+		animation: powerPulse 2s ease-in-out infinite;
 		overflow: hidden;
 	}
 
@@ -578,9 +653,9 @@ async function triggerCheckout() {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		border: 1px solid rgba(102, 204, 255, 0.15);
+		border: 2px solid rgba(204, 255, 0, 0.3);
 		border-radius: 50%;
-		box-shadow: 0 0 20px rgba(102, 204, 255, 0.2);
+		box-shadow: 0 0 20px rgba(204, 255, 0, 0.4);
 	}
 
 	.orbit-1 {
@@ -608,14 +683,16 @@ async function triggerCheckout() {
 		50% { transform: rotateZ(180deg) rotateX(70deg); }
 	}
 
-	@keyframes gentlePulse {
+	@keyframes powerPulse {
 		0%, 100% { 
 			transform: translate(-50%, -50%) scale(1);
 			filter: brightness(1);
+			box-shadow: 0 0 40px rgba(204, 255, 0, 0.8);
 		}
 		50% { 
-			transform: translate(-50%, -50%) scale(1.02);
-			filter: brightness(1.1);
+			transform: translate(-50%, -50%) scale(1.08);
+			filter: brightness(1.3);
+			box-shadow: 0 0 60px rgba(204, 255, 0, 1), 0 0 100px rgba(204, 255, 0, 0.6);
 		}
 	}
 
@@ -638,162 +715,8 @@ async function triggerCheckout() {
 		}
 	}
 
-	/* Translucent highlight box - iMac G3 inspired */
-	.gray-box {
-		position: relative;
-		height: 290px;
-		margin-inline: 1rem;
-		padding-block: 2rem;
-		padding-inline: 1rem;
-		border-radius: 2rem;
-		overflow: visible;
-		background: radial-gradient(ellipse at top, 
-			rgba(102, 204, 255, 0.08) 0%,
-			rgba(255, 255, 255, 0.95) 40%,
-			rgba(245, 245, 247, 0.98) 100%);
-		backdrop-filter: blur(10px);
-		border: 1px solid rgba(255, 255, 255, 0.8);
-		box-shadow: 
-			0 4px 20px rgba(0, 0, 0, 0.05),
-			inset 0 1px 2px rgba(255, 255, 255, 0.9);
-	}
-
-    @media screen and (min-width: 720px) {
-  .gray-box {
-    border-radius: 5rem;       /* rounder corners */
-    margin-inline: 4rem;       /* fatter gap on sides */
-  }
-}
-	.gray-box-content {
-		max-width: 720px;
-		margin: 0 auto;
-		position: relative;
-		height: 100%;
-	}
-
-	/* Centered translucent glass highlight card */
-	.highlight-card {
-		position: absolute;
-		bottom: -8.1rem;
-		left: 50%;
-        width: 290px;
-		transform: translateX(-50%);
-		background: rgba(255, 255, 255, 0.9);
-		backdrop-filter: blur(20px);
-		border-radius: 1rem;
-		box-shadow: 
-			0 8px 24px rgba(0, 0, 0, 0.1),
-			inset 0 1px 2px rgba(255, 255, 255, 0.9),
-			inset 0 -1px 2px rgba(0, 0, 0, 0.05);
-		border: 1px solid rgba(255, 255, 255, 0.8);
-		max-width: 320px;
-		padding: 1rem;
-		text-align: center;
-        z-index: 20;
-	}
-
-	/* White backing div underneath highlight-card */
-	.white-backing {
-		position: absolute;
-		bottom: -49rem;
-		left: 50%;
-		width: 100vw;
-		height: 700px;
-		transform: translateX(-50%);
-		background: #fff;
-		border-radius: 1rem;
-		max-width: 320px;
-		z-index: 10;
-	}
-/* Make the highlight button a flex container */
-  .highlight-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 24px;
-    pointer-events: none;
-    cursor: default;
-  }
-  
-  .highlight-btn:hover {
-    background: linear-gradient(135deg, #00C851 0%, #00A944 100%) !important;
-    transform: none !important;
-  }
-
-  /* Spinner & Checkmark: same size & positioning */
-  .highlight-spinner,
-  .highlight-checkmark {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-    left: 79px;
-    margin-right: 17px; /* exactly offset the text */
-    display: inline-block;
-  }
-
-  /* Spinner styling */
-  .highlight-spinner {
-    border: 2px solid rgb(100, 255, 107);
-    border-top-color: transparent;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-
-  /* --- NEW: independently nudge the text up --- */
-.highlight-btn-text {
-  position: relative;
-  display: inline-block;
-    left: -12px;
-
-}
-
-  /* --- NEW: independently nudge the text up --- */
-.highlight-btn-text-complete {
-  position: relative;
-  display: inline-block;
-    left: 10px;
-
-}
 
 
-
-  /* Button text */
-  .highlight-btn-text {
-    display: inline-block;
-  }
-	/* Loading ellipsis animation */
-	.loading-ellipsis {
-		display: inline-block;
-		width: 20px;
-		text-align: left;
-	}
-
-	.loading-ellipsis:after {
-		content: '.';
-		animation: ellipsis 1.3s infinite;
-	}
-
-	@keyframes ellipsis {
-		0% { content: '.'; }
-		33% { content: '..'; }
-		66% { content: '...'; }
-	}
-
-	/* Checkmark styling */
-	.highlight-checkmark {
-		position: absolute;
-		/* top: 50%;
-		left: 16%; */
-		width: 20px;
-        left: 92px;
-		height: 20px;
-		/* transform: translate(-50%, -50%); */
-		z-index: 10;
-	}
 
 	/* Migrate content feature styling */
 	.feature-migrate {
@@ -804,16 +727,16 @@ async function triggerCheckout() {
 	}
 
 	.feature-migrate h2 {
-		font-size: 2.25rem;
+		font-family: 'Oswald', sans-serif;
+		font-size: 2.5rem;
 		margin-bottom: 0.75rem;
-		font-weight: 400;
-		letter-spacing: -0.02em;
-		background: linear-gradient(135deg, #333 0%, #555 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		color: #000;
+		text-transform: uppercase;
 		margin-top: -1px;
-		line-height: 1.3;
+		line-height: 1.1;
+		text-shadow: 2px 2px 0px #CCFF00;
 	}
 
 	.feature-migrate p {
@@ -826,24 +749,26 @@ async function triggerCheckout() {
 		margin-bottom: 2rem;
 	}
 
-	/* Download button - Apple-inspired design */
+	/* Download button - Nike Breaking2 design */
 	.btn-download {
-		background: linear-gradient(135deg, #66CCFF 0%, #3399FF 100%);
-		color: #fff;
+		background: #CCFF00;
+		color: #000;
 		margin-top: 0;
 		font-size: 1.125rem;
 		padding: 1rem 2.5rem;
-		font-weight: 400;
-		letter-spacing: -0.01em;
-		border-radius: 9999px;
-		transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+		font-family: 'Oswald', sans-serif;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		border-radius: 0;
+		transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
 		box-shadow: 
-			0 4px 16px rgba(102, 204, 255, 0.3),
-			inset 0 1px 2px rgba(255, 255, 255, 0.4);
+			0 4px 16px rgba(204, 255, 0, 0.4),
+			0 0 20px rgba(204, 255, 0, 0.3);
 		position: relative;
 		overflow: hidden;
-		border: 1px solid rgba(255, 255, 255, 0.3);
-		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+		border: 2px solid #CCFF00;
+		clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
 	}
 
 	.btn-download::before {
@@ -859,11 +784,13 @@ async function triggerCheckout() {
 	}
 
 	.btn-download:hover:not(:disabled) {
-		background: linear-gradient(135deg, #5CBEFF 0%, #2E8CFF 100%);
-		transform: translateY(-1px) scale(1.02);
+		background: #fff;
+		color: #000;
+		border: 2px solid #CCFF00;
+		transform: translateY(-2px) scale(1.05);
 		box-shadow: 
-			0 8px 24px rgba(102, 204, 255, 0.4),
-			inset 0 1px 3px rgba(255, 255, 255, 0.5);
+			0 8px 24px rgba(204, 255, 0, 0.6),
+			0 0 30px rgba(204, 255, 0, 0.5);
 	}
 
 	.btn-download:hover:not(:disabled)::before {
@@ -900,16 +827,20 @@ async function triggerCheckout() {
 	}
 
 	.btn-primary {
-		background: rgba(255, 255, 255, 0.7);
-		color: #333;
-		border: 1px solid rgba(255, 255, 255, 0.9);
+		background: #CCFF00;
+		color: #000;
+		border: 2px solid #CCFF00;
 		box-shadow: 
-			0 2px 8px rgba(0, 0, 0, 0.1),
-			inset 0 1px 2px rgba(255, 255, 255, 0.9),
-			inset 0 -1px 2px rgba(0, 0, 0, 0.05);
-		backdrop-filter: blur(20px);
+			0 4px 16px rgba(204, 255, 0, 0.4),
+			0 0 20px rgba(204, 255, 0, 0.2);
 		position: relative;
 		overflow: hidden;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-size: 1.1rem;
+		padding: 0.8rem 2rem;
 	}
 
 	.btn-primary::before {
@@ -927,12 +858,13 @@ async function triggerCheckout() {
 	}
 
 	.btn-primary:hover:not(:disabled) {
-		background: rgba(255, 255, 255, 0.85);
-		transform: translateY(-1px) scale(1.02);
+		background: #fff;
+		color: #000;
+		border: 2px solid #CCFF00;
+		transform: translateY(-2px) scale(1.05);
 		box-shadow: 
-			0 4px 16px rgba(0, 0, 0, 0.15),
-			inset 0 1px 3px rgba(255, 255, 255, 1),
-			inset 0 -1px 3px rgba(0, 0, 0, 0.08);
+			0 8px 24px rgba(204, 255, 0, 0.6),
+			0 0 30px rgba(204, 255, 0, 0.4);
 	}
 
 	.btn-primary:hover:not(:disabled)::before {
@@ -945,15 +877,32 @@ async function triggerCheckout() {
 		transform: none;
 	}
 
-	/* Features - Early 2000s Apple inspired design */
+	/* Features - Nike Breaking2 design */
 	.features {
 		background: linear-gradient(180deg, 
-			#f5f5f7 0%, 
-			#ffffff 50%, 
-			#f8f9fa 100%);
+			#ffffff 0%, 
+			#f8f8f8 50%, 
+			#ffffff 100%);
 		padding: 4rem 1rem 6rem;
 		position: relative;
 		z-index: 15;
+	}
+
+	.features::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: repeating-linear-gradient(
+			-45deg,
+			transparent 0px,
+			transparent 100px,
+			rgba(204, 255, 0, 0.02) 102px,
+			rgba(204, 255, 0, 0.02) 104px
+		);
+		pointer-events: none;
 	}
 
 	.features-container {
@@ -996,12 +945,26 @@ async function triggerCheckout() {
 	}
 
 	.feature h2 {
-		font-size: 1.75rem;
-		line-height: 1.4;
+		font-family: 'Oswald', sans-serif;
+		font-size: 2rem;
+		line-height: 1.2;
 		margin-bottom: 1rem;
-		font-weight: 400;
-		letter-spacing: -0.01em;
-		color: #333;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+		color: #000;
+		text-transform: uppercase;
+		position: relative;
+	}
+
+	.feature h2::after {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		width: 60px;
+		height: 3px;
+		background: #CCFF00;
+		box-shadow: 0 0 8px rgba(204, 255, 0, 0.5);
 	}
 
 	.feature p {
@@ -1425,18 +1388,46 @@ async function triggerCheckout() {
   margin-inline: 1rem;
   padding-block: 3.5rem;
   padding-inline: 1.5rem;
-  border-radius: 2rem;
-  overflow: visible;
-  background: radial-gradient(ellipse at center, 
-    rgba(10, 14, 39, 0.95) 0%, 
-    rgba(26, 31, 58, 0.9) 100%);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(102, 204, 255, 0.3);
+  border-radius: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, 
+    #000000 0%, 
+    #1a1a1a 50%,
+    #000000 100%);
+  border: 2px solid #CCFF00;
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.2),
-    inset 0 1px 2px rgba(255, 255, 255, 0.1);
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(204, 255, 0, 0.3),
+    inset 0 1px 2px rgba(204, 255, 0, 0.2);
   color: #fff;
   margin-top: -7px;
+  clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+}
+
+.cta-dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent 0px,
+    transparent 60px,
+    rgba(204, 255, 0, 0.1) 62px,
+    rgba(204, 255, 0, 0.1) 64px,
+    transparent 66px,
+    transparent 120px
+  );
+  animation: kinetic-lines-cta 15s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes kinetic-lines-cta {
+  0% { transform: translateX(-120px); }
+  100% { transform: translateX(120px); }
 }
 
 @media screen and (min-width: 720px) {
@@ -1447,13 +1438,15 @@ async function triggerCheckout() {
 }
 
 .cta-dark h2 {
-  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2rem;
   margin-bottom: 2rem;
-  line-height: 1.3;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px #CCFF00;
 }
 
 
@@ -1495,26 +1488,28 @@ async function triggerCheckout() {
 	}
 
 	.btn-secondary_bottom {
-		background: rgba(255, 255, 255, 0.9);
-		color: #333;
-		font-weight: 400;
-		border: 1px solid rgba(255, 255, 255, 0.8);
-		backdrop-filter: blur(20px);
+		background: #CCFF00;
+		color: #000;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		border: 2px solid #CCFF00;
 		box-shadow: 
-			0 2px 8px rgba(255, 255, 255, 0.2),
-			inset 0 1px 2px rgba(255, 255, 255, 0.9);
-		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+			0 4px 16px rgba(204, 255, 0, 0.4),
+			0 0 20px rgba(204, 255, 0, 0.3);
+		clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
 	}
 
 
 	.btn-secondary_bottom:hover:not(:disabled) {
-		background: rgba(255, 255, 255, 0.95);
-		color: #66CCFF;
-		font-weight: 400;
-		transform: translateY(-1px) scale(1.02);
+		background: #fff;
+		color: #000;
+		border: 2px solid #CCFF00;
+		transform: translateY(-2px) scale(1.05);
 		box-shadow: 
-			0 4px 16px rgba(255, 255, 255, 0.4),
-			inset 0 1px 3px rgba(255, 255, 255, 1);
+			0 8px 24px rgba(204, 255, 0, 0.6),
+			0 0 30px rgba(204, 255, 0, 0.5);
 	}
 
 	.btn-secondary:hover:not(:disabled) {
